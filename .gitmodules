@@ -1,0 +1,3 @@
+[submodule "IRIS-Model-Files"]
+	path = IRIS-Model-Files
+	url = https://github.com/tmt-icd/IRIS-Model-Files
