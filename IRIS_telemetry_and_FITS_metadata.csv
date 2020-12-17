@@ -13,7 +13,7 @@
 11,RAMP_NO,,,,,Ramp within Exposure [0-99999],Int 32,,1.0,,,,,
 12,READ_NO,,,,,Readout Within Ramp [0-99999],Int 32,,1.0,,,,,
 13,COMPLETE,,,,,Indicates if Pixels were readout,bool,,1.0,,,,,
-14,AODM11TM,,,,dm11,Current temperature of DM11 ,double,C,,,1.0,,,
+14,AODM11TM,,,,dm11,Current temperature of DM11,double,C,,,1.0,,,
 15,GUIDRA*    ,TCS,cmIRIS,oiwfsTargetInfo,,"Proposed item in which TCS publishes ICRS RA, Dec and proper motions, names, and colors (what system?) for OIWFS targets. FITS=GUIDDEC*, GUIDRA*, GUIDNAM*, GUIDPM*, GUIDCOL",,,,,1.0,4.0,"Proposed item in which TCS publishes ICRS RA, Dec and proper motions, names, and colors (what system?) for OIWFS targets. FITS=GUIDDEC*, GUIDRA*, GUIDNAM*, GUIDPM*, GUIDCOL*",1.0
 16,GUIDDEC*,TCS,cmIRIS,oiwfsTargetInfo,,,,,,,1.0,4.0,"Proposed item in which TCS publishes ICRS RA, Dec and proper motions, names, and colors (what system?) for OIWFS targets. FITS=GUIDDEC*, GUIDRA*, GUIDNAM*, GUIDPM*, GUIDCOL*",1.0
 17,GUIDNAM*,TCS,cmIRIS,oiwfsTargetInfo,,,,,,,1.0,4.0,"Proposed item in which TCS publishes ICRS RA, Dec and proper motions, names, and colors (what system?) for OIWFS targets. FITS=GUIDDEC*, GUIDRA*, GUIDNAM*, GUIDPM*, GUIDCOL*",1.0
@@ -29,7 +29,7 @@
 27,GUIDNAM*,TCS,cmNFIRAOS,ngsTargetInfo,,,,,,,1.0,4.0,"Proposed item in which TCS publishes ICRS RA, Dec and proper motions, names, and colors (what system?) for the NGS WFS target. FITS=???",1.0
 28,GUIDPM*,TCS,cmNFIRAOS,ngsTargetInfo,,,,,,,1.0,4.0,"Proposed item in which TCS publishes ICRS RA, Dec and proper motions, names, and colors (what system?) for the NGS WFS target. FITS=???",1.0
 29,GUIDCOL*,TCS,cmNFIRAOS,ngsTargetInfo,,,,,,,1.0,4.0,"Proposed item in which TCS publishes ICRS RA, Dec and proper motions, names, and colors (what system?) for the NGS WFS target. FITS=???",1.0
-30,RA,TCS,pk,currentPosition,ra,"	 Current right ascension (ICRS, at equinox)",,degree,,1.0,1.0,,,1.0
+30,RA,TCS,pk,currentPosition,ra,"Current right ascension (ICRS, at equinox)",,degree,,1.0,1.0,,,1.0
 31,DEC,TCS,pk,currentPosition,dec,"Current declination (ICRS, at equinox)",double,degree,,1.0,1.0,,,1.0
 32,EQUINOX,TCS,pk,currentPosition,equinox,Equinox of the celestial coordinate system,double,years,,1.0,1.0,,,1.0
 33,PARANG,TCS,pk,currentPosition,parallactic,"Current parallactic angle (ICRS, at equinox)",double,degree,,1.0,1.0,,,1.0
@@ -74,7 +74,7 @@
 72,ODGW3ST,TCS,cmIRIS,odgwPosDemands,odgw3_pointingstate,Current state of the ODGW event stream,"enum: (SLEWING, TRACKING, INPOSITION)",,,,1.0,,,1.0
 73,ODGW4ST,TCS,cmIRIS,odgwPosDemands,odgw4_pointingstate,Current state of the ODGW event stream,"enum: (SLEWING, TRACKING, INPOSITION)",,,,1.0,,,1.0
 74,ENCBASE,TCS,ENCAssembly,CurrentPosition,base,This is the Current Base Position.,double,degree,,,1.0,,,1.0
-75,ENCCAP,TCS,ENCAssembly,CurrentPosition,cap,This is the Current Cap Position ,double,degree,,,1.0,,,1.0
+75,ENCCAP,TCS,ENCAssembly,CurrentPosition,cap,This is the Current Cap Position,double,degree,,,1.0,,,1.0
 76,SSLGSALT,NFIRAOS,ssLgs,current,altitude,Current altitude estimated based on measured range distance and the value set for zenith angle (= current.rangeDistance*cos(simTcs.zenithAngle)).,double (85 ≤ x ≤ 100),km,,,1.0,,,1.0
 77,,NFIRAOS,ssLgs,current,rangeDistance,Current range distance estimated based on SS LGS focus stage position (current.focus).,double (85 ≤ x ≤ 100),km,,,1.0,,,1.0
 78,,NFIRAOS,ssLgs,current,intensity,Current intensity estimate of LGS simulation sources based on current duty cycle (current.dutyCycle),double,photon flux,,,1.0,,,1.0
@@ -92,11 +92,11 @@
 90,AORATEHO,NFIRAOS,rtc,mode,rateHo,high-order loop rate. In LGS mode this is equal to the LGS WFS frame rate. In NGS or SL mode this is equal to the PWFS frame rate.,,,,,1.0,,,1.0
 91,AORATELO,NFIRAOS,rtc,mode,rateLo,low-order loop rate. This is equal to the Tier 1 and 2 steady-state frame rate.,,,,,1.0,,,1.0
 92,AORATELT,NFIRAOS,rtc,mode,rateLot,low-order truth loop rate. This is equal to the Tier 3 and 3F steady-state frame rate.,,,,,1.0,,,1.0
-93,AORATEWC,NFIRAOS,rtc,mode,rateWc,wavefront correction. In LGS mode this should be at least equal to the LGS WFS frame rate. In NGS mode this should be at least equal to the PWFS frame rate. In SL mode his should be at least to the Tier 1 and 2 steady-state frame rate ,,,,,1.0,,,1.0
+93,AORATEWC,NFIRAOS,rtc,mode,rateWc,wavefront correction. In LGS mode this should be at least equal to the LGS WFS frame rate. In NGS mode this should be at least equal to the PWFS frame rate. In SL mode his should be at least to the Tier 1 and 2 steady-state frame rate,,,,,1.0,,,1.0
 94,AOTIER1,NFIRAOS,rtc,mode,tier1,Tier 1 detector assignment,"enum: (PWFS, OIWFSA, OIWFSB, OIWFSC)",,,,1.0,,,1.0
-95,AOTIER2,NFIRAOS,rtc,mode,tier2,Tier 2 detector assignment. The array is ordered Tier 2 [A B]. ,"array[2] of enum: (NONE, PWFS, OIWFSA, OIWFSB, OIWFSC, ODGW1, ODGW2, ODGW3, ODGW4)",,,,1.0,,,1.0
-96,AOTIER3,NFIRAOS,rtc,mode,tier3,Tier 3 detector assignment. The array is ordered Tier 3 [A B C D]. ,"array[4] of enum: (NONE, OIWFSA, OIWFSB, OIWFSC, ODGW1, ODGW2, ODGW3, ODGW4)",,,,1.0,,,1.0
-97,AOTIER3F,NFIRAOS,rtc,mode,tier3f,Tier 3F detector assignment ,"enum: (NONE, OIWFSA, OIWFSB, OIWFSC)",,,,1.0,,,1.0
+95,AOTIER2,NFIRAOS,rtc,mode,tier2,Tier 2 detector assignment. The array is ordered Tier 2 [A B].,"array[2] of enum: (NONE, PWFS, OIWFSA, OIWFSB, OIWFSC, ODGW1, ODGW2, ODGW3, ODGW4)",,,,1.0,,,1.0
+96,AOTIER3,NFIRAOS,rtc,mode,tier3,Tier 3 detector assignment. The array is ordered Tier 3 [A B C D].,"array[4] of enum: (NONE, OIWFSA, OIWFSB, OIWFSC, ODGW1, ODGW2, ODGW3, ODGW4)",,,,1.0,,,1.0
+97,AOTIER3F,NFIRAOS,rtc,mode,tier3f,Tier 3F detector assignment,"enum: (NONE, OIWFSA, OIWFSB, OIWFSC)",,,,1.0,,,1.0
 98,RESROTER,NFIRAOS,rtc,inst,rot,,,,,,,,,1.0
 99,ODGWIMEL,NFIRAOS,rtc,odgwImage,ellip,"ellipticity value based on the averaged spot ellipticity profile, i.e., ratio between σ1 and σ2 of the ellipse.",array[4] of float,pixel,,,1.0,,,1.0
 100,ODGWIMS1,NFIRAOS,rtc,odgwImage,size1,"image size 1 (σ1) based on the averaged spot ellipticity profile,",array[4] of float,pixel,,,1.0,,,1.0
@@ -145,7 +145,7 @@
 143,OIWF2SXY,IRIS,oiwfs.poa,POS_current,xy2,"2-element array holding x,y values",array[2] of double,mm,,,1.0,,,1.0
 144,OIWF3SXY,IRIS,oiwfs.poa,POS_current,xy3,"2-element array holding x,y values",array[2] of double,mm,,,1.0,,,1.0
 145,OIWFS1ST,IRIS,oiwfs.poa,MODE_state,mode1_onTarget,oiwfs1 mode onTarget flag,boolean,,,,1.0,,,1.0
-146,OIWFS2ST,IRIS,oiwfs.poa,MODE_state,mode1_onTarget,oiwfs2 mode onTarget flag ,boolean,,,,1.0,,,1.0
+146,OIWFS2ST,IRIS,oiwfs.poa,MODE_state,mode1_onTarget,oiwfs2 mode onTarget flag,boolean,,,,1.0,,,1.0
 147,OIWFS3ST,IRIS,oiwfs.poa,MODE_state,mode1_onTarget,oiwfs3 mode onTarget flag,boolean,,,,1.0,,,1.0
 148,EXPNO,IRIS,is,exposureRepeats,currentIFSExposureNumber,Number of current (if in progress) or last IFS exposure at current dither pattern with current instrument configuration (1-based).,integer (0 ≤ x),,,,1.0,,,1.0
 149,,IRIS,is,exposureRepeats,currentImagerExposureNumber,Number of current (if in progress) or last imager exposure at current dither pattern with current instrument configuration (1-based).,integer (0 ≤ x),,,,1.0,,,1.0

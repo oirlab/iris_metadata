@@ -1,4 +1,4 @@
-Fits Keywords,Assembly,Subsystem,Event_Name,Variable,Description,Type,Unit,Readout ,Raw Frame,Processed Frame
+Fits Keywords,Assembly,Subsystem,Event_Name,Variable,Description,Type,Unit,Readout,Raw Frame,Processed Frame
 XSIZE,,,,,Window Size,Int 16,pixels,1,1,1
 YSIZE,,,,,Window Size,Int 16,Pixels,1,1,1
 XSTART,,,,,Subarray Start X,Int 16,pixels,1,1,1
