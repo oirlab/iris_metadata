@@ -50,21 +50,21 @@ PNTGST,TCS,pk,pointingStatus,pointingstate,Current state of the pointing system,
 ,,,,,,,,,,
 ,,,,,,,,,,
 M3ROT,TCS,TCS M3 Assembly,M3 Position,rotation,Current position in rotation.,double,degree,,,1
-M3TILT,,,,tilt,Current position in tilt.,double,degree,,,1
+M3TILT,,TCS M3 Assembly,M3 Position,tilt,Current position in tilt.,double,degree,,,1
 ,,,,,,,,,,
 M2TIP,TCS,TCS M2 Assembly,M2 Position,tip,Current position in tip.,double,degree,,,1
-M2TILT,,,,tilt,Current position in tilt.,double,degree,,,1
-M2PISTON,,,,piston,Current position in piston.,double,m,,,1
-M2DECENX,,,,decenter-x,Current position in decenter-x.,double,m,,,1
-M2DECENY,,,,decenter-y,Current position in decenter-y.,double,m,,,1
+M2TILT,,TCS M2 Assembly,M2 Position,tilt,Current position in tilt.,double,degree,,,1
+M2PISTON,,TCS M2 Assembly,M2 Position,piston,Current position in piston.,double,m,,,1
+M2DECENX,,TCS M2 Assembly,M2 Position,decenter-x,Current position in decenter-x.,double,m,,,1
+M2DECENY,,TCS M2 Assembly,M2 Position,decenter-y,Current position in decenter-y.,double,m,,,1
 ,,,,,,,,,,
 ,,,,,,,,,,
 ,TCS,cmIRIS,imgAtmDispersion,referenceWavelength,The reference wavelength is the wavelength at which the computed dispersion is reported by the TCS as 0. Range is TBC.,referenceWavelength,referenceWavelength,,,1
-,,,,orientation,Orientation of the axis of dispersion due to atmospheric refraction defined in the XY plane of the FCRSIRIS-ROT,orientation,orientation,,,1
-IMGDISWV,,,,wavelength,An array of wavelengths. Each provided wavelength value must be unique.,wavelength,wavelength,,,1
-IMGDISWT,,,,weight,An array of weights. They must sum to 1.0.,weight,weight,,,1
-IMGDISVL,,,,dispersion,An array of atmospheric dispersion values,dispersion,dispersion,,,1
-,,,,timestamp,Timestamp for the data,timestamp,timestamp,,,1
+,TCS,cmIRIS,imgAtmDispersion,orientation,Orientation of the axis of dispersion due to atmospheric refraction defined in the XY plane of the FCRSIRIS-ROT,orientation,orientation,,,1
+IMGDISWV,TCS,cmIRIS,imgAtmDispersion,wavelength,An array of wavelengths. Each provided wavelength value must be unique.,wavelength,wavelength,,,1
+IMGDISWT,TCS,cmIRIS,imgAtmDispersion,weight,An array of weights. They must sum to 1.0.,weight,weight,,,1
+IMGDISVL,TCS,cmIRIS,imgAtmDispersion,dispersion,An array of atmospheric dispersion values,dispersion,dispersion,,,1
+,TCS,cmIRIS,imgAtmDispersion,timestamp,Timestamp for the data,timestamp,timestamp,,,1
 ,,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -83,20 +83,20 @@ PROTANG,TCS,cmIRIS,pupilRotation,pupilRotation,"Future IRIS pupil rotation angle
 ,,,,,,,,,,
 PA,TCS,cmIRIS,positionAngle,positionAngle,Current angle between Y axis of FCRSIRIS and Declination axis (ICRS).,double,degrees,,,1
 OIWFS1PS,TCS,cmIRIS,oiwfsProbeDemands,oiwfs1_pos,"2-element array holding x,y values in the FCRSIRIS-ROT.",array[2] of double,mm,,,1
-OIWFS2PS,,,,oiwfs2_pos,"2-element array holding x,y values in the FCRSIRIS-ROT.",array[2] of double,mm,,,1
-OIWFS3PS,,,,oiwfs3_pos,"2-element array holding x,y values in the FCRSIRIS-ROT.",array[2] of double,mm,,,1
-OIWFS1ST,,,,oiwfs1_pointingstate,Current state of the probe event stream,"enum: (SLEWING, TRACKING, INPOSITION)",,,,1
-OIWFS2ST,,,,oiwfs2_pointingstate,Current state of the probe event stream,"enum: (SLEWING, TRACKING, INPOSITION)",,,,1
-OIWFS3ST,,,,oiwfs3_pointingstate,Current state of the probe event stream,"enum: (SLEWING, TRACKING, INPOSITION)",,,,1
+OIWFS2PS,TCS,cmIRIS,oiwfsProbeDemands,oiwfs2_pos,"2-element array holding x,y values in the FCRSIRIS-ROT.",array[2] of double,mm,,,1
+OIWFS3PS,TCS,cmIRIS,oiwfsProbeDemands,oiwfs3_pos,"2-element array holding x,y values in the FCRSIRIS-ROT.",array[2] of double,mm,,,1
+OIWFS1ST,TCS,cmIRIS,oiwfsProbeDemands,oiwfs1_pointingstate,Current state of the probe event stream,"enum: (SLEWING, TRACKING, INPOSITION)",,,,1
+OIWFS2ST,TCS,cmIRIS,oiwfsProbeDemands,oiwfs2_pointingstate,Current state of the probe event stream,"enum: (SLEWING, TRACKING, INPOSITION)",,,,1
+OIWFS3ST,TCS,cmIRIS,oiwfsProbeDemands,oiwfs3_pointingstate,Current state of the probe event stream,"enum: (SLEWING, TRACKING, INPOSITION)",,,,1
 ,,,,,,,,,,
 ODGW1PS,TCS,cmIRIS,odgwPosDemands,odgw1_pos,"2-element array holding x,y values in the FCRSIRIS-ROT.",array[2] of double,mm,,1,1
-ODGW2PS,,,,odgw2_pos,"2-element array holding x,y values in the FCRSIRIS-ROT.",array[2] of double,mm,,1,1
-ODGW3PS,,,,odgw3_pos,"2-element array holding x,y values in the FCRSIRIS-ROT.",array[2] of double,mm,,1,1
-ODGW4PS,,,,odgw4_pos,"2-element array holding x,y values in the FCRSIRIS-ROT.",array[2] of double,mm,,1,1
-ODGW1ST,,,,odgw1_pointingstate,Current state of the ODGW event stream,"enum: (SLEWING, TRACKING, INPOSITION)",,,,1
-ODGW2ST,,,,odgw2_pointingstate,Current state of the ODGW event stream,"enum: (SLEWING, TRACKING, INPOSITION)",,,,1
-ODGW3ST,,,,odgw3_pointingstate,Current state of the ODGW event stream,"enum: (SLEWING, TRACKING, INPOSITION)",,,,1
-ODGW4ST,,,,odgw4_pointingstate,Current state of the ODGW event stream,"enum: (SLEWING, TRACKING, INPOSITION)",,,,1
+ODGW2PS,TCS,cmIRIS,odgwPosDemands,odgw2_pos,"2-element array holding x,y values in the FCRSIRIS-ROT.",array[2] of double,mm,,1,1
+ODGW3PS,TCS,cmIRIS,odgwPosDemands,odgw3_pos,"2-element array holding x,y values in the FCRSIRIS-ROT.",array[2] of double,mm,,1,1
+ODGW4PS,TCS,cmIRIS,odgwPosDemands,odgw4_pos,"2-element array holding x,y values in the FCRSIRIS-ROT.",array[2] of double,mm,,1,1
+ODGW1ST,TCS,cmIRIS,odgwPosDemands,odgw1_pointingstate,Current state of the ODGW event stream,"enum: (SLEWING, TRACKING, INPOSITION)",,,,1
+ODGW2ST,TCS,cmIRIS,odgwPosDemands,odgw2_pointingstate,Current state of the ODGW event stream,"enum: (SLEWING, TRACKING, INPOSITION)",,,,1
+ODGW3ST,TCS,cmIRIS,odgwPosDemands,odgw3_pointingstate,Current state of the ODGW event stream,"enum: (SLEWING, TRACKING, INPOSITION)",,,,1
+ODGW4ST,TCS,cmIRIS,odgwPosDemands,odgw4_pointingstate,Current state of the ODGW event stream,"enum: (SLEWING, TRACKING, INPOSITION)",,,,1
 ,,,,,,,,,,
 ,,,,,,,,,,
 ENCBASE,TCS,ENCAssembly,CurrentPosition,base,This is the Current Base Position.,double,degree,,,1
@@ -107,34 +107,34 @@ ENCCAP,TCS,ENCAssembly,CurrentPosition,cap,"This is the Current Cap Position
 ,,,,,,,,,,
 ,,,,,,,,,,
 SSLGSALT,NFIRAOS,ssLgs,current,altitude,Current altitude estimated based on measured range distance and the value set for zenith angle (= current.rangeDistance*cos(simTcs.zenithAngle)).,double (85 ≤ x ≤ 100),km,,,1
-,,,,rangeDistance,Current range distance estimated based on SS LGS focus stage position (current.focus).,double (85 ≤ x ≤ 100),km,,,1
-,,,,intensity,Current intensity estimate of LGS simulation sources based on current duty cycle (current.dutyCycle),double,photon flux,,,1
+,NFIRAOS,ssLgs,current,rangeDistance,Current range distance estimated based on SS LGS focus stage position (current.focus).,double (85 ≤ x ≤ 100),km,,,1
+,NFIRAOS,ssLgs,current,intensity,Current intensity estimate of LGS simulation sources based on current duty cycle (current.dutyCycle),double,photon flux,,,1
 SSLGSMAG,NFIRAOS,ssNgs,state,magnitude,"magnitude estimate of the variable intensity NGS sources in R band (TBC), based on manual and motorized attenuator (current.attenuation).",array[7] of double,,,,1
 ,,,,,,,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 LGSR0,NFIRAOS,rtc,turbLgs,r0,fried parameter (r0),float,m,,,1
-LGSTHT0,,,,theta0,isoplanatic angle (θ0),float,mas,,,1
-LGSTHT2,,,,theta2,generalized isoplanatic angle (θ2),float,mas,,,1
-LGSL0,,,,L0,turbulence outer scale (L0),float,m,,,1
-LGSTAU0,,,,tau0,coherence time (τ0),float,seconds,,,1
-LGSCN2P,,,,profile,Cn2 turbulence profile (p),array[12] of float,m-5/3,,,1
+LGSTHT0,NFIRAOS,rtc,turbLgs,theta0,isoplanatic angle (θ0),float,mas,,,1
+LGSTHT2,NFIRAOS,rtc,turbLgs,theta2,generalized isoplanatic angle (θ2),float,mas,,,1
+LGSL0,NFIRAOS,rtc,turbLgs,L0,turbulence outer scale (L0),float,m,,,1
+LGSTAU0,NFIRAOS,rtc,turbLgs,tau0,coherence time (τ0),float,seconds,,,1
+LGSCN2P,NFIRAOS,rtc,turbLgs,profile,Cn2 turbulence profile (p),array[12] of float,m-5/3,,,1
 ,,,,,,,,,,
 NGSPROF,NFIRAOS,rtc,turbNgs,groundLayer,ground layer turbulence (p),float,m-5/3,,,1
-NGSR0,,,,r0,fried parameter (r0),float,m,,,1
-NGSL0,,,,l0,turbulence outer scale (L0),float,m,,,1
-NGSTAU0,,,,tau0,coherence time (τ0),float,seconds,,,1
+NGSR0,NFIRAOS,rtc,turbNgs,r0,fried parameter (r0),float,m,,,1
+NGSL0,NFIRAOS,rtc,turbNgs,l0,turbulence outer scale (L0),float,m,,,1
+NGSTAU0,NFIRAOS,rtc,turbNgs,tau0,coherence time (τ0),float,seconds,,,1
 ,,,,,,,,,,
 AORATEHO,NFIRAOS,rtc,mode,rateHo,high-order loop rate. In LGS mode this is equal to the LGS WFS frame rate. In NGS or SL mode this is equal to the PWFS frame rate.,,,,,1
-AORATELO,,,,rateLo,low-order loop rate. This is equal to the Tier 1 and 2 steady-state frame rate.,,,,,1
-AORATELT,,,,rateLot,low-order truth loop rate. This is equal to the Tier 3 and 3F steady-state frame rate.,,,,,1
-AORATEWC,,,,rateWc,wavefront correction. In LGS mode this should be at least equal to the LGS WFS frame rate. In NGS mode this should be at least equal to the PWFS frame rate. In SL mode his should be at least to the Tier 1 and 2 steady-state frame rate ,,,,,1
-AOTIER1,,,,tier1,Tier 1 detector assignment,"enum: (PWFS, OIWFSA, OIWFSB, OIWFSC)",,,,1
-AOTIER2,,,,tier2,"Tier 2 detector assignment. The array is ordered Tier 2 [A B].
+AORATELO,NFIRAOS,rtc,mode,rateLo,low-order loop rate. This is equal to the Tier 1 and 2 steady-state frame rate.,,,,,1
+AORATELT,NFIRAOS,rtc,mode,rateLot,low-order truth loop rate. This is equal to the Tier 3 and 3F steady-state frame rate.,,,,,1
+AORATEWC,NFIRAOS,rtc,mode,rateWc,wavefront correction. In LGS mode this should be at least equal to the LGS WFS frame rate. In NGS mode this should be at least equal to the PWFS frame rate. In SL mode his should be at least to the Tier 1 and 2 steady-state frame rate ,,,,,1
+AOTIER1,NFIRAOS,rtc,mode,tier1,Tier 1 detector assignment,"enum: (PWFS, OIWFSA, OIWFSB, OIWFSC)",,,,1
+AOTIER2,NFIRAOS,rtc,mode,tier2,"Tier 2 detector assignment. The array is ordered Tier 2 [A B].
 ","array[2] of enum: (NONE, PWFS, OIWFSA, OIWFSB, OIWFSC, ODGW1, ODGW2, ODGW3, ODGW4)",,,,1
-AOTIER3,,,,tier3,"Tier 3 detector assignment. The array is ordered Tier 3 [A B C D].
+AOTIER3,NFIRAOS,rtc,mode,tier3,"Tier 3 detector assignment. The array is ordered Tier 3 [A B C D].
 ","array[4] of enum: (NONE, OIWFSA, OIWFSB, OIWFSC, ODGW1, ODGW2, ODGW3, ODGW4)",,,,1
-AOTIER3F,,,,tier3f,"Tier 3F detector assignment
+AOTIER3F,NFIRAOS,rtc,mode,tier3f,"Tier 3F detector assignment
 ","enum: (NONE, OIWFSA, OIWFSB, OIWFSC)",,,,1
 ,,,,,,,,,,
 ,,,,,,,,,,
@@ -159,72 +159,72 @@ AODM0TM,NFIRAOS,dm,temperature,dm0,Current temperature of DM0,double,C,,,1
 AODM11TM,,,,dm11,"Current temperature of DM11
 ",double,C,,,1
 ,NFIRAOS,lgsTrombone,sodiumLayer,zenithAngle,Current zenith angle used to calculate range distance from altitude.,double (85 ≤ x ≤ 105),degrees,,,1
-AONAALT,,,,altitude,Current best estimate of the sodium layer altitude.,double (1 ≤ x ≤ 65),km,,,1
+AONAALT,NFIRAOS,lgsTrombone,sodiumLayer,altitude,Current best estimate of the sodium layer altitude.,double (1 ≤ x ≤ 65),km,,,1
 ,,,,,,,,,,
 AOENCLTM,NFIRAOS,encl,temperature,inside,Air temperature inside the optical enclosure as reported by the refrigeration controller and the 1-Wire Sensor.,array[2] of double (-40 ≤ x ≤ 40),C,,,1
-,,,,outside,Air temperature outside the optical enclosure and the 1-Wire Sensor.,"array[2,3] of double (-40 ≤ x ≤ 40)",C,,,1
+,NFIRAOS,encl,temperature,outside,Air temperature outside the optical enclosure and the 1-Wire Sensor.,"array[2,3] of double (-40 ≤ x ≤ 40)",C,,,1
 AOENCPRE,NFIRAOS,encl,pressure,,,,,,,
 CLDSTPX,IRIS,imager.coldstop,current,x_pos,Current position in X axis.,float,mm,,,1
-CLDSTPY,,,,y_pos,Current position in Y axis.,float,mm,,,1
-CLDSTPTH,,,,theta,Current angle of the rotary stage.,float,degree,,,1
+CLDSTPY,IRIS,imager.coldstop,current,y_pos,Current position in Y axis.,float,mm,,,1
+CLDSTPTH,IRIS,imager.coldstop,current,theta,Current angle of the rotary stage.,float,degree,,,1
 ,,,,,,,,,,
 ,,,,,,,,,,
 PPMIRRST,IRIS,pupilview,MIRROR_state,selection,whetehr the mirror is inserted into the light path or not,"enum: (IN, INTERMEDIATE, OUT, UNKNOWN)",,,,1
 ,,,,,,,,,,
 ,,,,,,,,,,
 FILTER,IRIS,imager.filter,state,current,"Current imager filter name. When two or more filters are inserted in the science light path, filter names are concatinated with TBD character in the order of wheel number.",string,,,1,1
-FILTWAVE,,,,wavelength,Current effective filter wavelength. Effective wavelength is defined as,double,,,1,1
-FILTDRFL,,,,dark,ndicates whether a dark filter is inserted or not.,boolean,,,,
+FILTWAVE,IRIS,imager.filter,state,wavelength,Current effective filter wavelength. Effective wavelength is defined as,double,,,1,1
+FILTDRFL,IRIS,imager.filter,state,dark,ndicates whether a dark filter is inserted or not.,boolean,,,,
 ,,,,,,,,,,
 ,,,,,,,,,,
 FILT1POS,IRIS,imager.filter,wheel1,position,Current position name of this wheel.,"enum: (TBD1, TBD2, TBD3, TBD4, TBD5, TBD6, TBD7, TBD8, TBD9, TBD10, TBD11, TBD12, TBD13, TBD14, THROUGH, HOME, INTERMEDIATE, UNKNOWN)",,,,1
-,,,,angle,Current rotation angle from the home position.,float (0 ≤ x < 360),degree,,,1
+,IRIS,imager.filter,wheel1,angle,Current rotation angle from the home position.,float (0 ≤ x < 360),degree,,,1
 FILT2POS,IRIS,imager.filter,wheel2,position,Current position name of this wheel.,"enum: (TBD1, TBD2, TBD3, TBD4, TBD5, TBD6, TBD7, TBD8, TBD9, TBD10, TBD11, TBD12, TBD13, TBD14, THROUGH, HOME, INTERMEDIATE, UNKNOWN)",,,,1
-,,,,angle,Current rotation angle from the home position.,float (0 ≤ x < 360),degree,,,1
+,IRIS,imager.filter,wheel2,angle,Current rotation angle from the home position.,float (0 ≤ x < 360),degree,,,1
 FILT3POS,IRIS,imager.filter,wheel3,position,Current position name of this wheel.,"enum: (TBD1, TBD2, TBD3, TBD4, TBD5, TBD6, TBD7, TBD8, TBD9, TBD10, TBD11, TBD12, TBD13, TBD14, THROUGH, HOME, INTERMEDIATE, UNKNOWN)",,,,1
-,,,,angle,Current rotation angle from the home position.,float (0 ≤ x < 360),degree,,,
+,IRIS,imager.filter,wheel3,angle,Current rotation angle from the home position.,float (0 ≤ x < 360),degree,,,
 FILT4POS,IRIS,imager.filter,wheel4,position,Current position name of this wheel.,"enum: (TBD1, TBD2, TBD3, TBD4, TBD5, TBD6, TBD7, TBD8, TBD9, TBD10, TBD11, TBD12, TBD13, TBD14, THROUGH, HOME, INTERMEDIATE, UNKNOWN)",,,,1
-,,,,angle,Current rotation angle from the home position.,float (0 ≤ x < 360),degree,,,1
+,IRIS,imager.filter,wheel4,angle,Current rotation angle from the home position.,float (0 ≤ x < 360),degree,,,1
 FILT5POS,IRIS,imager.filter,wheel5,position,Current position name of this wheel.,"enum: (TBD1, TBD2, TBD3, TBD4, TBD5, TBD6, TBD7, TBD8, TBD9, TBD10, TBD11, TBD12, TBD13, TBD14, THROUGH, HOME, INTERMEDIATE, UNKNOWN)",,,,1
-,,,,angle,Current rotation angle from the home position.,float (0 ≤ x < 360),degree,,,1
+,IRIS,imager.filter,wheel5,angle,Current rotation angle from the home position.,float (0 ≤ x < 360),degree,,,1
 ,IRIS,imager.adc,PRISM_current,rotationA,Current rotation of the A stage for ADC in FCRSIRIS-ROT,double,degrees,,,1
-,,,,rotationB,Current rotation of the B stage for ADC in FCRSIRIS-ROT,double,degrees,,,1
+,IRIS,imager.adc,PRISM_current,rotationB,Current rotation of the B stage for ADC in FCRSIRIS-ROT,double,degrees,,,1
 ,IRIS,imager.detector,currentConfig,obsId,Observation ID given by LOAD_CONFIGURATION command.,string,,,,1
-,,,,totalTime,Actual total exposure time which is rampIntegrationTime multiplied by ramps.,float (0 ≤ x),s,,,1
-,,,,rampIntegrationTime,Actual integration time of one ramp. The reuqested integration time is rounded down to the nearest valid integration time which is a multiple of readoutTime.,float (0 ≤ x),s,,,1
-,,,,readoutTime,"Time to clock one detector, which is dependent on pixel clocking time and subarray dimensions and channels used.",float,s,,,1
-,,,,reads,Number of reads in one ramp. This value is calculated from the requested integration time for one ramp.,integer (1 ≤ x ≤ 100000),,,,1
-,,,,ramps,Number of ramps in one exposure which is given by LOAD_CONFIGURATION command.,integer (1 ≤ x ≤ 100000),,,,1
+,IRIS,imager.detector,currentConfig,totalTime,Actual total exposure time which is rampIntegrationTime multiplied by ramps.,float (0 ≤ x),s,,,1
+,IRIS,imager.detector,currentConfig,rampIntegrationTime,Actual integration time of one ramp. The reuqested integration time is rounded down to the nearest valid integration time which is a multiple of readoutTime.,float (0 ≤ x),s,,,1
+,IRIS,imager.detector,currentConfig,readoutTime,"Time to clock one detector, which is dependent on pixel clocking time and subarray dimensions and channels used.",float,s,,,1
+,IRIS,imager.detector,currentConfig,reads,Number of reads in one ramp. This value is calculated from the requested integration time for one ramp.,integer (1 ≤ x ≤ 100000),,,,1
+,IRIS,imager.detector,currentConfig,ramps,Number of ramps in one exposure which is given by LOAD_CONFIGURATION command.,integer (1 ≤ x ≤ 100000),,,,1
 ,IRIS,imager.detector,systemConf,detectorName,Serial number of each detector.,,,,,1
-,,,,gain,Conversion of photoelectrons to counts for each detector.,,,,,1
-,,,,use,,,,,,1
-,,,,readNoise,Nominal read noise of the entire array measured at commissioning phase.,,,,,1
-,,,,pixelClockingTime,Time to select and read one pixel.,,,,,1
-,,,,resetLevel,Reset level of each detector.,,,,,1
-,,,,channels,"Number of channels. The possible numbers are 1, 4, 16, 32, 64.",,,,,1
+,IRIS,imager.detector,systemConf,gain,Conversion of photoelectrons to counts for each detector.,,,,,1
+,IRIS,imager.detector,systemConf,use,,,,,,1
+,IRIS,imager.detector,systemConf,readNoise,Nominal read noise of the entire array measured at commissioning phase.,,,,,1
+,IRIS,imager.detector,systemConf,pixelClockingTime,Time to select and read one pixel.,,,,,1
+,IRIS,imager.detector,systemConf,resetLevel,Reset level of each detector.,,,,,1
+,IRIS,imager.detector,systemConf,channels,"Number of channels. The possible numbers are 1, 4, 16, 32, 64.",,,,,1
 OIWF1SXY,IRIS,oiwfs.poa,POS_current,xy1,"2-element array holding x,y values",array[2] of double,mm,,,1
-OIWF2SXY,,,,xy2,"2-element array holding x,y values",array[2] of double,mm,,,1
-OIWF3SXY,,,,xy3,"2-element array holding x,y values",array[2] of double,mm,,,1
+OIWF2SXY,IRIS,oiwfs.poa,POS_current,xy2,"2-element array holding x,y values",array[2] of double,mm,,,1
+OIWF3SXY,IRIS,oiwfs.poa,POS_current,xy3,"2-element array holding x,y values",array[2] of double,mm,,,1
 OIWFS1ST,IRIS,oiwfs.poa,MODE_state,mode1_onTarget,oiwfs1 mode onTarget flag,boolean,,,,1
-OIWFS2ST,,,,mode1_onTarget,"oiwfs2 mode onTarget flag
+OIWFS2ST,IRIS,oiwfs.poa,MODE_state,mode1_onTarget,"oiwfs2 mode onTarget flag
 ",boolean,,,,1
-OIWFS3ST,,,,mode1_onTarget,oiwfs3 mode onTarget flag,boolean,,,,1
+OIWFS3ST,IRIS,oiwfs.poa,MODE_state,mode1_onTarget,oiwfs3 mode onTarget flag,boolean,,,,1
 EXPNO,IRIS,is,exposureRepeats,currentIFSExposureNumber,Number of current (if in progress) or last IFS exposure at current dither pattern with current instrument configuration (1-based).,integer (0 ≤ x),,,,1
-,,,,currentImagerExposureNumber,Number of current (if in progress) or last imager exposure at current dither pattern with current instrument configuration (1-based).,integer (0 ≤ x),,,,1
-DITHNO,,,,numberOfIFSExposures,Total number of IFS exposures at current dither pattern.,integer (0 ≤ x),,,,1
-,,,,numberOfImagerExposures,Total number of IFS exposures at current dither pattern with current instrument configuration.,integer (0 ≤ x),,,,1
+,IRIS,is,exposureRepeats,currentImagerExposureNumber,Number of current (if in progress) or last imager exposure at current dither pattern with current instrument configuration (1-based).,integer (0 ≤ x),,,,1
+DITHNO,IRIS,is,exposureRepeats,numberOfIFSExposures,Total number of IFS exposures at current dither pattern.,integer (0 ≤ x),,,,1
+,IRIS,is,exposureRepeats,numberOfImagerExposures,Total number of IFS exposures at current dither pattern with current instrument configuration.,integer (0 ≤ x),,,,1
 IFSSTATE,IRIS,is,observing,ifs,"IFS is currently observing, means when set the start prepare event was received and will stay that way until the observation is complete is received",boolean,,,1,1
-IMSTATE,,,,imager,"IMAGER is currently observing, means when set the start prepare event was received and will stay that way until the observation is complete is received",boolean,,,1,1
+IMSTATE,IRIS,is,observing,imager,"IMAGER is currently observing, means when set the start prepare event was received and will stay that way until the observation is complete is received",boolean,,,1,1
 IFSMODE,IRIS,is,ifsMode,mode,Indicates if in slicer or lenslet mode,"enum: (LENSLET, SLICER, UNKNOWN)",,,1,1
 ,IRIS,is,sciAdcFollow,mode,indicates if science adc is currently following,"enum: (FOLLOWING, NOT_FOLLOWING)",,,,1
 ,IRIS,is,ifsObserveSettings,numRamps,Number of configured ramps. Each ramp is bounded by resets and is of integration time in length. Each ramp has the sampling mode applied. The resultant raw Science Frame is created by adding the output of each ramp.,numRamps,,,1,1
-,,,,integrationTime,"Integration time, this is the length of time for each ramp",integrationTime,,,1,1
-,,,,samplingMode,"This is the sampling mode. This could be CDS, MDS or UTR",samplingMode,,,1,1
-NUMREADS,,,,numReads,Number of raw readouts used in the sampling mode per ramp. This is the number of raw readouts that are added together before being used in the sampling mode to create a single frame. This number is only used in sample modes of MDS and UTR,numReads,,,1,1
+,IRIS,is,ifsObserveSettings,integrationTime,"Integration time, this is the length of time for each ramp",integrationTime,,,1,1
+,IRIS,is,ifsObserveSettings,samplingMode,"This is the sampling mode. This could be CDS, MDS or UTR",samplingMode,,,1,1
+NUMREADS,IRIS,is,ifsObserveSettings,numReads,Number of raw readouts used in the sampling mode per ramp. This is the number of raw readouts that are added together before being used in the sampling mode to create a single frame. This number is only used in sample modes of MDS and UTR,numReads,,,1,1
 NUMRAMPS,IRIS,is,imagerObserveSettings,numRamps,Number of configured ramps. Each ramp is bounded by resets and is of integration time in length. Each ramp has the sampling mode applied. The resultant raw Science Frame is created by adding the output of each ramp.,numRamps,,,1,1
-RAMPINTT,,,,integrationTime,"Integration time, this is the length of time for each ramp",integrationTime,,,1,1
-SAMPMODE,,,,samplingMode,"This is the sampling mode. This could be CDS, MDS or UTR",samplingMode,,,1,1
-NUMREADS,,,,numReads,Number of raw readouts used in the sampling mode per ramp. This is the number of raw readouts that are added together before being used in the sampling mode to create a single frame. This number is only used in sample modes of MDS and UTR,numReads,,,1,1
+RAMPINTT,IRIS,is,imagerObserveSettings,integrationTime,"Integration time, this is the length of time for each ramp",integrationTime,,,1,1
+SAMPMODE,IRIS,is,imagerObserveSettings,samplingMode,"This is the sampling mode. This could be CDS, MDS or UTR",samplingMode,,,1,1
+NUMREADS,IRIS,is,imagerObserveSettings,numReads,Number of raw readouts used in the sampling mode per ramp. This is the number of raw readouts that are added together before being used in the sampling mode to create a single frame. This number is only used in sample modes of MDS and UTR,numReads,,,1,1
 IFSSCALE,IRIS,ifs.scale,scale,current,IFS Scale,,,,1,1
 IFSMODE,IRIS,ifs.scale,IFSmode,mode,Current IFS mode,"enum: (lenslet, slicer)",,,1,1
 PCKMRRPS,IRIS,ifs.scale,pickoffMirrorMech,position,Current position name of pickoff mirror mechanism.,"enum: (IN, OUT)",,,,1
@@ -239,27 +239,27 @@ IFSGRTPS,IRIS,ifs.res,gratingmech,position,Current position name of spectral res
 LLMSKPOS,IRIS,ifs.res,lensletmaskmech,position,Current position name of spectral resolution lenslet mask mechanism.,string,,,,
 ,IRIS,ifs.res,slicermaskmech,position,Current position name of spectral resolution slicer mask mechanism.,string,,,,1
 OBSID,IRIS,ifs.detector,currentConfig,obsId,Observation ID given by LOAD_CONFIGURATION command.,string,,,,1
-EXPTIME,,,,totalTime,Actual total exposure time which is rampIntegrationTime multiplied by ramps.,float (0 ≤ x),s,,,1
-RAMPTIME,,,,rampIntegrationTime,Actual integration time of one ramp. The reuqested integration time is rounded down to the nearest valid integration time which is a multiple of readoutTime.,float (0 ≤ x),s,,,1
-READTIME,,,,readoutTime,"Time to clock one detector, which is dependent on pixel clocking time and subarray dimensions and channels used.",float,s,,,1
-NUMREADS,,,,reads,Number of reads in one ramp. This value is calculated from the requested integration time for one ramp.,integer (1 ≤ x ≤ 100000),,,,1
-NUMRAMPS,,,,ramps,Number of ramps in one exposure which is given by LOAD_CONFIGURATION command.,integer (1 ≤ x ≤ 100000),,,,1
+EXPTIME,IRIS,ifs.detector,currentConfig,totalTime,Actual total exposure time which is rampIntegrationTime multiplied by ramps.,float (0 ≤ x),s,,,1
+RAMPTIME,IRIS,ifs.detector,currentConfig,rampIntegrationTime,Actual integration time of one ramp. The reuqested integration time is rounded down to the nearest valid integration time which is a multiple of readoutTime.,float (0 ≤ x),s,,,1
+READTIME,IRIS,ifs.detector,currentConfig,readoutTime,"Time to clock one detector, which is dependent on pixel clocking time and subarray dimensions and channels used.",float,s,,,1
+NUMREADS,IRIS,ifs.detector,currentConfig,reads,Number of reads in one ramp. This value is calculated from the requested integration time for one ramp.,integer (1 ≤ x ≤ 100000),,,,1
+NUMRAMPS,IRIS,ifs.detector,currentConfig,ramps,Number of ramps in one exposure which is given by LOAD_CONFIGURATION command.,integer (1 ≤ x ≤ 100000),,,,1
 ,IRIS,ifs.detector,systemConf,detectorName,Serial number of each detector.,,,,,1
-GAIN,,,,gain,Conversion of photoelectrons to counts for each detector.,,,,1,1
-,,,,use,,,,,1,1
-READNOIS,,,,readNoise,Nominal read noise of the entire array measured at commissioning phase.,,,,,1
-,,,,pixelClockingTime,Time to select and read one pixel.,,,,1,1
-,,,,resetLevel,Reset level of each detector.,,,,1,1
-,,,,channels,"Number of channels. The possible numbers are 1, 4, 16, 32, 64.",,,,1,1
+GAIN,IRIS,ifs.detector,systemConf,gain,Conversion of photoelectrons to counts for each detector.,,,,1,1
+,IRIS,ifs.detector,systemConf,use,,,,,1,1
+READNOIS,IRIS,ifs.detector,systemConf,readNoise,Nominal read noise of the entire array measured at commissioning phase.,,,,,1
+,IRIS,ifs.detector,systemConf,pixelClockingTime,Time to select and read one pixel.,,,,1,1
+,IRIS,ifs.detector,systemConf,resetLevel,Reset level of each detector.,,,,1,1
+,IRIS,ifs.detector,systemConf,channels,"Number of channels. The possible numbers are 1, 4, 16, 32, 64.",,,,1,1
 IMGTMPXX,IRIS,sc.cryoenv,IMGTEMP[XX],sensorID,ID of the sensor assigned for the temperature reading,sensorID,,,1,1
-,,,,reading,Temperature reading of the sensor in kelvin,reading,,,1,1
-,,,,unit,Temperature unit,unit,,,1,1
+,IRIS,sc.cryoenv,IMGTEMP[XX],reading,Temperature reading of the sensor in kelvin,reading,,,1,1
+,IRIS,sc.cryoenv,IMGTEMP[XX],unit,Temperature unit,unit,,,1,1
 IFSTMPXX,IRIS,sc.cryoenv,IFSTEMP[XX],sensorID,ID of the sensor assigned for the temperature reading,sensorID,,,1,1
-,,,,reading,Temperature reading of the sensor in kelvin,reading,,,1,1
-,,,,unit,Temperature unit,unit,,,1,1
+,IRIS,sc.cryoenv,IFSTEMP[XX],reading,Temperature reading of the sensor in kelvin,reading,,,1,1
+,IRIS,sc.cryoenv,IFSTEMP[XX],unit,Temperature unit,unit,,,1,1
 TMPTMP,IRIS,el.env,TEMP_TEMP[N],sensorID,ID of the sensor assigned for the temperature reading,sensorID,,,1,1
-,,,,reading,Temperature reading of the sensor in kelvin,reading,,,1,1
-,,,,unit,Temperature unit,unit,,,1,1
+,IRIS,el.env,TEMP_TEMP[N],reading,Temperature reading of the sensor in kelvin,reading,,,1,1
+,IRIS,el.env,TEMP_TEMP[N],unit,Temperature unit,unit,,,1,1
 ,ESEN,ESEN Publisher Assembly,wind-speeds,,,,,,,1
 ,ESEN,ESEN Publisher Assembly,air-temperatures,,,,,,,1
 ,ESEN,ESEN Publisher Assembly,surface-temperatures,,,,,,,1
