@@ -206,7 +206,7 @@
 "204","","ESEN","ESEN Publisher Assembly","dew-points","","","","","","","1","1","",""
 "205","","ESEN","ESEN Publisher Assembly","pressures","","","","","","","1","1","",""
 "206","","TCS","cmNFIRAOS","atmDispersion","","","","","","","","1","",""
-"207","","TCS","cmNFIRAOS","ngsPos","","","","","","","","1","",""
+"207","","TCS","cmNFIRAOS","vnwPos","","","","","","","","1","",""
 "208","","TCS","cmIRIS","oiwfs1AtmDispersion","","","","","","","","1","",""
 "209","","TCS","cmIRIS","oiwfs2AtmDispersion","","","","","","","","1","",""
 "210","","TCS","cmIRIS","oiwfs3AtmDispersion","","","","","","","","1","",""
