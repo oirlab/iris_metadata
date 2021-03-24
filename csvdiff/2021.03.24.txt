@@ -1,0 +1,407 @@
+1 column removed, 6 rows changed, 15 rows added, 8 rows removed
+
+1 column removed
+
+  Index
+
+6 rows changed
+
+  Id: AODM11TM
+    subsystem: "" => "NFIRAOS"
+    component: "" => "dm"
+    name: "" => "temperature"
+
+  Id: M3TILT
+    subsystem: "" => "TCS"
+
+  Id: M2TILT
+    subsystem: "" => "TCS"
+
+  Id: M2PISTON
+    subsystem: "" => "TCS"
+
+  Id: M2DECENX
+    subsystem: "" => "TCS"
+
+  Id: M2DECENY
+    subsystem: "" => "TCS"
+
+15 rows added
+
+  Id: OIWFGSIN
+  Fits Keywords: OIWFGSIN
+  subsystem: TCS
+  component: cmIRIS
+  name: oiwfsGuideStarLUT
+  Variable: lut
+  Description: Index of Gudestars oiwfs
+  Type: 
+  Unit: 
+  Readout: 
+  Raw Frame: 
+  Processed Frame: 1
+  isEvent: 
+  requiredRate: 
+  usage: 
+
+  Id: ODGWGSIN
+  Fits Keywords: ODGWGSIN
+  subsystem: TCS
+  component: cmIRIS
+  name: odgwGuideStarLUT
+  Variable: lut
+  Description: Index of Guidestars odgw
+  Type: 
+  Unit: 
+  Readout: 
+  Raw Frame: 
+  Processed Frame: 1
+  isEvent: 
+  requiredRate: 
+  usage: 
+
+  Id: VNWFGSIN
+  Fits Keywords: VNWFGSIN
+  subsystem: TCS
+  component: cmNFIRAOS
+  name: vnwGuideStarLUT
+  Variable: lut
+  Description: index of Guidestars VNW
+  Type: 
+  Unit: 
+  Readout: 
+  Raw Frame: 
+  Processed Frame: 1
+  isEvent: 
+  requiredRate: 
+  usage: 
+
+  Id: GUIDNAME
+  Fits Keywords: GUIDNAME
+  subsystem: TCS
+  component: pk
+  name: guideStarInfo
+  Variable: Name
+  Description: 
+  Type: 
+  Unit: 
+  Readout: 
+  Raw Frame: 
+  Processed Frame: 
+  isEvent: 
+  requiredRate: 
+  usage: 
+
+  Id: GUIDRA 
+  Fits Keywords: GUIDRA 
+  subsystem: TCS
+  component: pk
+  name: guideStarInfo
+  Variable: RA
+  Description: 
+  Type: 
+  Unit: 
+  Readout: 
+  Raw Frame: 
+  Processed Frame: 
+  isEvent: 
+  requiredRate: 
+  usage: 
+
+  Id: GUIDDEC
+  Fits Keywords: GUIDDEC
+  subsystem: TCS
+  component: pk
+  name: guideStarInfo
+  Variable: Dec
+  Description: 
+  Type: 
+  Unit: 
+  Readout: 
+  Raw Frame: 
+  Processed Frame: 
+  isEvent: 
+  requiredRate: 
+  usage: 
+
+  Id: GUIDPMRA
+  Fits Keywords: GUIDPMRA
+  subsystem: TCS
+  component: pk
+  name: guideStarInfo
+  Variable: ProperMotionRA
+  Description: 
+  Type: 
+  Unit: 
+  Readout: 
+  Raw Frame: 
+  Processed Frame: 
+  isEvent: 
+  requiredRate: 
+  usage: 
+
+  Id: GUIDPMDC
+  Fits Keywords: GUIDPMDC
+  subsystem: TCS
+  component: pk
+  name: guideStarInfo
+  Variable: ProperMotionDec
+  Description: 
+  Type: 
+  Unit: 
+  Readout: 
+  Raw Frame: 
+  Processed Frame: 
+  isEvent: 
+  requiredRate: 
+  usage: 
+
+  Id: GUIDCOL
+  Fits Keywords: GUIDCOL
+  subsystem: TCS
+  component: pk
+  name: guideStarInfo
+  Variable: color
+  Description: 
+  Type: 
+  Unit: 
+  Readout: 
+  Raw Frame: 
+  Processed Frame: 
+  isEvent: 
+  requiredRate: 
+  usage: 
+
+  Id: GUIDCOLU
+  Fits Keywords: GUIDCOLU
+  subsystem: TCS
+  component: pk
+  name: guideStarInfo
+  Variable: colorDescription
+  Description: 
+  Type: 
+  Unit: 
+  Readout: 
+  Raw Frame: 
+  Processed Frame: 
+  isEvent: 
+  requiredRate: 
+  usage: 
+
+  Id: DISNFRW
+  Fits Keywords: DISNFRW
+  subsystem: TCS
+  component: cmNFIRAOS
+  name: atmDispersion
+  Variable: referenceWavelength
+  Description: 
+  Type: 
+  Unit: 
+  Readout: 
+  Raw Frame: 
+  Processed Frame: 
+  isEvent: 1
+  requiredRate: 
+  usage: 
+
+  Id: DISNFOR
+  Fits Keywords: DISNFOR
+  subsystem: TCS
+  component: cmNFIRAOS
+  name: atmDispersion
+  Variable: orientation
+  Description: 
+  Type: 
+  Unit: 
+  Readout: 
+  Raw Frame: 
+  Processed Frame: 
+  isEvent: 
+  requiredRate: 
+  usage: 
+
+  Id: DISNFWV
+  Fits Keywords: DISNFWV
+  subsystem: TCS
+  component: cmNFIRAOS
+  name: atmDispersion
+  Variable: wavelength
+  Description: 
+  Type: 
+  Unit: 
+  Readout: 
+  Raw Frame: 
+  Processed Frame: 
+  isEvent: 
+  requiredRate: 
+  usage: 
+
+  Id: DISNFWG
+  Fits Keywords: DISNFWG
+  subsystem: TCS
+  component: cmNFIRAOS
+  name: atmDispersion
+  Variable: weight
+  Description: 
+  Type: 
+  Unit: 
+  Readout: 
+  Raw Frame: 
+  Processed Frame: 
+  isEvent: 
+  requiredRate: 
+  usage: 
+
+  Id: DISNFVAL
+  Fits Keywords: DISNFVAL
+  subsystem: TCS
+  component: cmNFIRAOS
+  name: atmDispersion
+  Variable: dispersion
+  Description: 
+  Type: 
+  Unit: 
+  Readout: 
+  Raw Frame: 
+  Processed Frame: 
+  isEvent: 
+  requiredRate: 
+  usage: 
+
+8 rows removed
+
+  Index: 15
+  Fits Keywords: GUIDRA*    
+  subsystem: TCS
+  component: cmIRIS
+  name: oiwfsTargetInfo
+  Variable: 
+  Description: Proposed item in which TCS publishes ICRS RA, Dec and proper motions, names, and colors (what system?) for OIWFS targets. FITS=GUIDDEC*, GUIDRA*, GUIDNAM*, GUIDPM*, GUIDCOL
+  Type: 
+  Unit: 
+  Readout: 
+  Raw Frame: 
+  Processed Frame: 1
+  isEvent: 1
+  requiredRate: 4
+  usage: Proposed item in which TCS publishes ICRS RA, Dec and proper motions, names, and colors (what system?) for OIWFS targets. FITS=GUIDDEC*, GUIDRA*, GUIDNAM*, GUIDPM*, GUIDCOL*
+  Id: GUIDRA*    
+
+  Index: 26
+  Fits Keywords: GUIDDEC*
+  subsystem: TCS
+  component: cmNFIRAOS
+  name: ngsTargetInfo
+  Variable: 
+  Description: 
+  Type: 
+  Unit: 
+  Readout: 
+  Raw Frame: 
+  Processed Frame: 1
+  isEvent: 1
+  requiredRate: 4
+  usage: Proposed item in which TCS publishes ICRS RA, Dec and proper motions, names, and colors (what system?) for the NGS WFS target. FITS=???
+  Id: GUIDDEC*
+
+  Index: 27
+  Fits Keywords: GUIDNAM*
+  subsystem: TCS
+  component: cmNFIRAOS
+  name: ngsTargetInfo
+  Variable: 
+  Description: 
+  Type: 
+  Unit: 
+  Readout: 
+  Raw Frame: 
+  Processed Frame: 1
+  isEvent: 1
+  requiredRate: 4
+  usage: Proposed item in which TCS publishes ICRS RA, Dec and proper motions, names, and colors (what system?) for the NGS WFS target. FITS=???
+  Id: GUIDNAM*
+
+  Index: 28
+  Fits Keywords: GUIDPM*
+  subsystem: TCS
+  component: cmNFIRAOS
+  name: ngsTargetInfo
+  Variable: 
+  Description: 
+  Type: 
+  Unit: 
+  Readout: 
+  Raw Frame: 
+  Processed Frame: 1
+  isEvent: 1
+  requiredRate: 4
+  usage: Proposed item in which TCS publishes ICRS RA, Dec and proper motions, names, and colors (what system?) for the NGS WFS target. FITS=???
+  Id: GUIDPM*
+
+  Index: 29
+  Fits Keywords: GUIDCOL*
+  subsystem: TCS
+  component: cmNFIRAOS
+  name: ngsTargetInfo
+  Variable: 
+  Description: 
+  Type: 
+  Unit: 
+  Readout: 
+  Raw Frame: 
+  Processed Frame: 1
+  isEvent: 1
+  requiredRate: 4
+  usage: Proposed item in which TCS publishes ICRS RA, Dec and proper motions, names, and colors (what system?) for the NGS WFS target. FITS=???
+  Id: GUIDCOL*
+
+  Index: 25
+  Fits Keywords: GUIDRA*
+  subsystem: TCS
+  component: cmNFIRAOS
+  name: ngsTargetInfo
+  Variable: 
+  Description: Proposed item in which TCS publishes ICRS RA, Dec and proper motions, names, and colors (what system?) for the NGS WFS target
+  Type: 
+  Unit: 
+  Readout: 
+  Raw Frame: 
+  Processed Frame: 1
+  isEvent: 1
+  requiredRate: 4
+  usage: Proposed item in which TCS publishes ICRS RA, Dec and proper motions, names, and colors (what system?) for the NGS WFS target. FITS=???
+  Id: GUIDRA*
+
+  Index: 206
+  Fits Keywords: 
+  subsystem: TCS
+  component: cmNFIRAOS
+  name: atmDispersion
+  Variable: 
+  Description: 
+  Type: 
+  Unit: 
+  Readout: 
+  Raw Frame: 
+  Processed Frame: 
+  isEvent: 1
+  requiredRate: 
+  usage: 
+  Id: TCS.cmNFIRAOS.atmDispersion
+
+  Index: 207
+  Fits Keywords: 
+  subsystem: TCS
+  component: cmNFIRAOS
+  name: vnwPos
+  Variable: 
+  Description: 
+  Type: 
+  Unit: 
+  Readout: 
+  Raw Frame: 
+  Processed Frame: 
+  isEvent: 1
+  requiredRate: 
+  usage: 
+  Id: TCS.cmNFIRAOS.vnwPos
