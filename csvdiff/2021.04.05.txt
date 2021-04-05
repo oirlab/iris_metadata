@@ -1,0 +1,265 @@
+22 rows changed, 6 rows added, 6 rows removed
+
+22 rows changed
+
+  Id: AODM11TM
+    isEvent: "" => "1"
+
+  Id: OIWFGSIN
+    isEvent: "" => "1"
+
+  Id: ODGWGSIN
+    isEvent: "" => "1"
+
+  Id: VNWFGSIN
+    isEvent: "" => "1"
+
+  Id: GUIDNAME
+    isEvent: "" => "1"
+
+  Id: GUIDRA 
+    isEvent: "" => "1"
+
+  Id: GUIDDEC
+    isEvent: "" => "1"
+
+  Id: GUIDPMRA
+    isEvent: "" => "1"
+
+  Id: GUIDPMDC
+    isEvent: "" => "1"
+
+  Id: GUIDCOL
+    isEvent: "" => "1"
+
+  Id: GUIDCOLU
+    isEvent: "" => "1"
+
+  Id: M3TILT
+    isEvent: "" => "1"
+
+  Id: M2TILT
+    isEvent: "" => "1"
+
+  Id: M2PISTON
+    isEvent: "" => "1"
+
+  Id: M2DECENX
+    isEvent: "" => "1"
+
+  Id: M2DECENY
+    isEvent: "" => "1"
+
+  Id: IRIS.imager.adc.PRISM_current.rotationA
+    isEvent: "" => "1"
+
+  Id: IRIS.imager.adc.PRISM_current.rotationB
+    isEvent: "" => "1"
+
+  Id: DISNFOR
+    isEvent: "" => "1"
+
+  Id: DISNFWV
+    isEvent: "" => "1"
+
+  Id: DISNFWG
+    isEvent: "" => "1"
+
+  Id: DISNFVAL
+    isEvent: "" => "1"
+
+6 rows added
+
+  Id: IMGDTEMP
+  Fits Keywords: IMGDTEMP
+  subsystem: IRIS
+  component: sc.cryoenv
+  name: imgDetectorTemperature
+  Variable: 
+  Description: 
+  Type: 
+  Unit: 
+  Readout: 
+  Raw Frame: 1
+  Processed Frame: 1
+  isEvent: 1
+  requiredRate: 
+  usage: 
+
+  Id: IFSDTEMP
+  Fits Keywords: IFSDTEMP
+  subsystem: IRIS
+  component: sc.cryoenv
+  name: ifsDetectorTemperature
+  Variable: 
+  Description: 
+  Type: 
+  Unit: 
+  Readout: 
+  Raw Frame: 1
+  Processed Frame: 1
+  isEvent: 1
+  requiredRate: 
+  usage: 
+
+  Id: IMGTEMP
+  Fits Keywords: IMGTEMP
+  subsystem: IRIS
+  component: sc.cryoenv
+  name: imgTemperatures
+  Variable: 
+  Description: 
+  Type: 
+  Unit: 
+  Readout: 
+  Raw Frame: 1
+  Processed Frame: 1
+  isEvent: 1
+  requiredRate: 
+  usage: 
+
+  Id: IFSTEMP
+  Fits Keywords: IFSTEMP
+  subsystem: IRIS
+  component: sc.cryoenv
+  name: ifsTemperatures
+  Variable: 
+  Description: 
+  Type: 
+  Unit: 
+  Readout: 
+  Raw Frame: 1
+  Processed Frame: 1
+  isEvent: 1
+  requiredRate: 
+  usage: 
+
+  Id: IMGTLOC
+  Fits Keywords: IMGTLOC
+  subsystem: IRIS
+  component: sc.cryoenv
+  name: imgTemperatureLocations
+  Variable: 
+  Description: 
+  Type: 
+  Unit: 
+  Readout: 
+  Raw Frame: 1
+  Processed Frame: 1
+  isEvent: 1
+  requiredRate: 
+  usage: 
+
+  Id: IFSTLOC
+  Fits Keywords: IFSTLOC
+  subsystem: IRIS
+  component: sc.cryoenv
+  name: ifsTemperatureLocations
+  Variable: 
+  Description: 
+  Type: 
+  Unit: 
+  Readout: 
+  Raw Frame: 1
+  Processed Frame: 1
+  isEvent: 1
+  requiredRate: 
+  usage: 
+
+6 rows removed
+
+  Id: IMGTMPXX
+  Fits Keywords: IMGTMPXX
+  subsystem: IRIS
+  component: sc.cryoenv
+  name: IMGTEMP[XX]
+  Variable: sensorID
+  Description: ID of the sensor assigned for the temperature reading
+  Type: sensorID
+  Unit: 
+  Readout: 
+  Raw Frame: 1
+  Processed Frame: 1
+  isEvent: 1
+  requiredRate: 
+  usage: 
+
+  Id: IRIS.sc.cryoenv.IMGTEMP[XX].reading
+  Fits Keywords: 
+  subsystem: IRIS
+  component: sc.cryoenv
+  name: IMGTEMP[XX]
+  Variable: reading
+  Description: Temperature reading of the sensor in kelvin
+  Type: reading
+  Unit: 
+  Readout: 
+  Raw Frame: 1
+  Processed Frame: 1
+  isEvent: 1
+  requiredRate: 
+  usage: 
+
+  Id: IRIS.sc.cryoenv.IMGTEMP[XX].unit
+  Fits Keywords: 
+  subsystem: IRIS
+  component: sc.cryoenv
+  name: IMGTEMP[XX]
+  Variable: unit
+  Description: Temperature unit
+  Type: unit
+  Unit: 
+  Readout: 
+  Raw Frame: 1
+  Processed Frame: 1
+  isEvent: 1
+  requiredRate: 
+  usage: 
+
+  Id: IFSTMPXX
+  Fits Keywords: IFSTMPXX
+  subsystem: IRIS
+  component: sc.cryoenv
+  name: IFSTEMP[XX]
+  Variable: sensorID
+  Description: ID of the sensor assigned for the temperature reading
+  Type: sensorID
+  Unit: 
+  Readout: 
+  Raw Frame: 1
+  Processed Frame: 1
+  isEvent: 1
+  requiredRate: 
+  usage: 
+
+  Id: IRIS.sc.cryoenv.IFSTEMP[XX].reading
+  Fits Keywords: 
+  subsystem: IRIS
+  component: sc.cryoenv
+  name: IFSTEMP[XX]
+  Variable: reading
+  Description: Temperature reading of the sensor in kelvin
+  Type: reading
+  Unit: 
+  Readout: 
+  Raw Frame: 1
+  Processed Frame: 1
+  isEvent: 1
+  requiredRate: 
+  usage: 
+
+  Id: IRIS.sc.cryoenv.IFSTEMP[XX].unit
+  Fits Keywords: 
+  subsystem: IRIS
+  component: sc.cryoenv
+  name: IFSTEMP[XX]
+  Variable: unit
+  Description: Temperature unit
+  Type: unit
+  Unit: 
+  Readout: 
+  Raw Frame: 1
+  Processed Frame: 1
+  isEvent: 1
+  requiredRate: 
+  usage:
