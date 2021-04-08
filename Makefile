@@ -3,3 +3,6 @@ download :
 
 csvdiff : IRIS_telemetry_and_FITS_metadata.csv new_IRIS_telemetry_and_FITS_metadata.csv
 	csv-diff IRIS_telemetry_and_FITS_metadata.csv new_IRIS_telemetry_and_FITS_metadata.csv --key=Id > csvdiff/$$(date '+%Y.%m.%d').txt
+
+update :
+	mv new_IRIS_telemetry_and_FITS_metadata.csv IRIS_telemetry_and_FITS_metadata.csv
